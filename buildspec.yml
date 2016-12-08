@@ -12,7 +12,7 @@ phases:
       - rspec HelloWorld_spec.rb 
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build from Project $ProjectName completed on `date` creating artificat $artifactName in S3
 artifacts:
   files:
     - HelloWorld.rb
